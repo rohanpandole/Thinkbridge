@@ -1,16 +1,12 @@
-import java.util.Scanner;
-import org.junit.*;
-
-class Test
+class TestCode
 {
-    static String oneMultiple[] = { "Zero", "one ", "two ", "three ", "four ","five ", "six ", "seven ", "eight ",
-            "nine ", "ten ", "eleven ", "twelve ","thirteen ", "fourteen ", "fifteen ",
-            "sixteen ", "seventeen ", "eighteen ","nineteen " };
+    static String oneMultiple[] = { "Zero", "One", "Two", "Three", "Four","Five", "Six", "Seven", "Eight",
+            "Nine", "Ten", "Eleven", "Twelve","Thirteen", "Fourteen", "Fifteen",
+            "Sixteen", "Seventeen", "Eighteen","Nineteen" };
 
 
-    static String tenMultiple[] = { "", "", "twenty ", "thirty ", "forty ","fifty ", "sixty ", "seventy ", "eighty ",
-            "ninety " };
-
+    static String tenMultiple[] = { "", "", "Twenty", "Thirty", "Forty","Fifty", "Sixty", "Seventy", "Eighty",
+            "Ninety" };
 
     static String powerToWord(int n)
     {
@@ -29,18 +25,13 @@ class Test
         }
         if (n<1000)
         {
-            return oneMultiple[n/100]+"hundred and"+((n%100!=0)?" ":"")+powerToWord(n%100);
+            return oneMultiple[n/100]+" Hundred And"+((n%100!=0)?" ":"")+powerToWord(n%100);
         }
         if(n<100000)
         {
-            return powerToWord(n/1000)+"thousand"+((n%1000!=0)?" ":"")+powerToWord(n%1000);
+            return powerToWord(n/1000)+" Thousand"+((n%1000!=0)?" ":"")+powerToWord(n%1000);
         }
-        if(n<10000000)
-        {
-            return powerToWord(n/100000)+" lakh"+((n%100000!=0)?" ":"")+powerToWord(n%100000);
-        }
-
-        return powerToWord(0);
+        return powerToWord(n/100000)+" Lakh"+((n%100000!=0)?" ":"")+powerToWord(n%100000);
     }
 
 }
