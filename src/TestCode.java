@@ -7,11 +7,11 @@ class TestCode
 
     static String tenMultiple[] = { "", "", "Twenty", "Thirty", "Forty","Fifty", "Sixty", "Seventy", "Eighty",
             "Ninety" };
-    static String oneNumber[] = { "0", "1/100 Only", "2/100 Only", "3/100 Only", "4/100 Only","5/100 Only", "6/100 Only", "7/100 Only", "8/100 Only",
-            "9/100 Only", "10/100 Only", "11/100 Only", "12/100 Only","13/100 Only", "14/100 Only", "15/100 Only","16/100 Only", "17/100 Only", "18/100 Only","19/100 Only" };
+    static String oneNumber[] = { "0", "1/100 ONLY", "2/100 ONLY", "3/100 ONLY", "4/100 ONLY","5/100 ONLY", "6/100 ONLY", "7/100 ONLY", "8/100 ONLY",
+            "9/100 ONLY", "10/100 ONLY", "11/100 ONLY", "12/100 ONLY","13/100 ONLY", "14/100 ONLY", "15/100 ONLY","16/100 ONLY", "17/100 ONLY", "18/100 ONLY","19/100 ONLY" };
 
 
-    static String tenNumber[] = { "", "", "2", "3", "4","5", "6", "7", "8","9" };
+    static String tenNumber[] = { "", "", " 2", " 3", " 4"," 5", " 6", " 7", " 8"," 9" };
 
     static String powerToWord(int n)
     {

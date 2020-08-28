@@ -79,4 +79,22 @@ public class ActionTest
         Assert.assertEquals("One Lakh Twenty Three Thousand Four Hundred And Fifty Six",TestCode.powerToWord(deci));
         Assert.assertEquals("78/100 Only",TestCode.fractionToWord(frac));
     }
+    @Test
+    public void convertTest_SuccessWithFraction1()
+    {
+        double myDub=123456.78; //1234.56; //123456.78;
+        int  deci=(int)myDub;
+
+        myDub=(myDub%1)*101;
+        int frac=(int) myDub;
+
+        System.out.println(deci + "\n" + frac);
+
+        String s1="Rs. ";
+        s1+=TestCode.powerToWord(deci);
+        s1+=TestCode.fractionToWord(frac);
+        //System.out.println(s1);
+
+        Assert.assertEquals("Rs. One Lakh Twenty Three Thousand Four Hundred And Fifty Six 78/100 ONLY",s1);
+    }
 }
