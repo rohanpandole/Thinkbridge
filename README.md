@@ -6,7 +6,7 @@ This repository contain source code for number conversion to words For ex. If pr
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-There are **two java file** One is `ActionTest.java`  and Second is `TestCode.java`, Where `TestCode.java` have actual logic for conversion and `ActionTest.java` have multiple `Junit Test case` for  Regreesion Testing of logic.
+You have to clone this repository in you local repository .There are **two java file** One is `ActionTest.java`  and Second is `TestCode.java`, Where `TestCode.java` have actual logic for conversion and `ActionTest.java` have multiple `Junit Test case` for  Regreesion Testing of logic.
 
 ### Prerequisites
 
