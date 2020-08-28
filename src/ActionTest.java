@@ -40,6 +40,18 @@ public class ActionTest
        int number = 123456;
        assertEquals("One Lakh Twenty Three Thousand Four Hundred And Fifty Six",TestCode.powerToWord(number));
     }
+    @Test
+    public void convertTest_SuccessOnMinusValue1()
+    {
+        int number=-1;
+        assertEquals("minus One",TestCode.powerToWord(number));
+    }
+    @Test
+    public void convertTest_SuccessOnMinusValue2()
+    {
+        int number=-12;
+        assertEquals("minus Twelve",TestCode.powerToWord(number));
+    }
 
     @Test
     public void convertTest_Fail()
