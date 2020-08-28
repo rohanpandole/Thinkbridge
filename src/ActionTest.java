@@ -52,6 +52,12 @@ public class ActionTest
         int number=-12;
         assertEquals("minus Twelve",TestCode.powerToWord(number));
     }
+    @Test
+    public void convertTest_SuccessOnZero()
+    {
+        int number=-0;
+        assertEquals("Zero",TestCode.powerToWord(number));
+    }
 
     @Test
     public void convertTest_Fail()
