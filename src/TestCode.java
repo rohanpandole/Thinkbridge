@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import org.junit.*;
 
 class Test
 {
@@ -41,14 +42,5 @@ class Test
 
         return powerToWord(0);
     }
-    public static void main(String[] args)
-    {
-        Scanner sc=new Scanner(System.in);
-        System.out.print(" Enter digit : ");
 
-        int number = sc.nextInt();
-
-        System.out.print(" Digit in word : ");
-        System.out.println(powerToWord(number));
-    }
 }
